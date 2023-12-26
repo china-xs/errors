@@ -13,6 +13,6 @@ func (e CustomErr) Error() string {
 	return e.msg
 }
 
-func NewValid(msg string) error {
+func NewCustom(msg string) error {
 	return &CustomErr{msg: msg}
 }
