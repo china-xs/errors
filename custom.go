@@ -14,6 +14,10 @@ func (e CustomErr) Error() string {
 	return e.msg
 }
 
+func (e CustomErr) Code() int {
+	return e.code
+}
+
 func NewCustom(msg string) error {
 	return &CustomErr{msg: msg}
 }
